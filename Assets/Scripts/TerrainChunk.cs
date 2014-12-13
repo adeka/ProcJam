@@ -229,7 +229,7 @@ public class TerrainChunk : MonoBehaviour {
 			// spawn food
 			if (t.GetDecal() == null) {
 				if (height4 > 0.1f && geoHeight > thresh) {
-					if (Random.Range(0, 10) > 9) {
+					if (Random.Range(0, 10) > 8) {
 						if (height3 > 0.4f) {
 							GameObject food = Instantiate(Resources.Load("food/apple"), new Vector3(t.transform.position.x, t.transform.position.y, 0), Quaternion.identity) as GameObject;
 						} else if (height3 > 0.2f) {
